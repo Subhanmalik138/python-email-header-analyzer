@@ -1,0 +1,18 @@
+From: Alice Example <alice@example.com>
+To: bob@receiver.com
+Subject: Quarterly report
+Date: Tue, 25 Nov 2026 10:20:00 +0000
+Message-ID: <abc123@example.com>
+Return-Path: <alice@example.com>
+Authentication-Results: mx.receiver.com;
+    spf=pass smtp.mailfrom=example.com;
+    dkim=pass header.d=example.com;
+    dmarc=pass header.from=example.com
+Received: from mail.example.com (mail.example.com [203.0.113.10])
+    by mx.receiver.com with ESMTPS id x1
+    (using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384);
+    Tue, 25 Nov 2026 10:19:55 +0000
+Received: from [192.168.1.5] by mail.example.com with ESMTP id x0;
+    Tue, 25 Nov 2026 10:19:40 +0000
+
+Hi Bob, the report is attached.

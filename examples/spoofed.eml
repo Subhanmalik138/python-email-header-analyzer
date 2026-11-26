@@ -1,0 +1,16 @@
+From: "support@paypal.com" <attacker@evil.example>
+Reply-To: attacker@evil.example
+To: victim@receiver.com
+Subject: Urgent: verify your account now
+Date: Tue, 25 Nov 2026 11:00:00 +0000
+Message-ID: <zzz999@evil.example>
+Return-Path: <attacker@evil.example>
+Authentication-Results: mx.receiver.com;
+    spf=fail smtp.mailfrom=evil.example;
+    dkim=fail header.d=evil.example;
+    dmarc=fail header.from=evil.example
+Received: from evil.example (evil.example [198.51.100.77])
+    by mx.receiver.com with SMTP id y1;
+    Tue, 25 Nov 2026 10:59:30 +0000
+
+Please open the attached invoice to verify your account.

@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mailtrace"
+version = "1.0.0"
+description = "Forensic email header analyzer CLI — Received-chain tracing, SPF/DKIM/DMARC checks, spoof detection and attachment inventory"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Subhan Malik" }]
+keywords = ["email", "phishing", "forensics", "headers", "spf", "dkim", "dmarc", "cli"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Communications :: Email",
+    "Topic :: Security",
+]
+
+[project.scripts]
+mailtrace = "mailtrace.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
