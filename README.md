@@ -42,7 +42,7 @@ pip install .
 ```
 
 Requires Python 3.10+ and nothing else — the standard library does all the
-work (`email`, `argparse`, `hashlib`, `ipaddress`-free regex parsing).
+work (`email`, `argparse`, `hashlib`, `ipaddress`).
 
 ## Usage
 
